@@ -1,4 +1,6 @@
 /* Blog List Page Styles */
+
+
 .blog {
   background: var(--color-bg);
   padding: 6rem 0;
@@ -51,7 +53,7 @@
   background: var(--color-bg2);
   padding: 4rem;
   display: grid;
-  gap: 4rem;
+  gap: 0.5rem;
   margin: 7rem auto;
   border-radius: 1rem;
 }
@@ -59,6 +61,7 @@
 .blog-post__container h1 {
   text-align: center;
   margin-bottom: 1rem;
+  
 }
 
 .blog-post__meta {
@@ -69,16 +72,20 @@
 }
 
 .blog-post__image {
+  width: 100%;
+  height: 300px;  /* Adjust this value as needed */
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  align-items: center;
 }
 
 .blog-post__image img {
-  width: 30%;
-  max-width: 300px; /* Ensures the image doesn't get too large on bigger screens */
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  object-position: center;
 }
 
 .blog-post__content {
@@ -87,6 +94,10 @@
 
 .blog-post__content h2 {
   margin: 2rem 0 1rem;
+}
+
+.blog-post__content h3 {
+  margin: 1.5rem 0 1rem;
 }
 
 /* Media Queries */
