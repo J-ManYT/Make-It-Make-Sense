@@ -1,0 +1,113 @@
+/* Blog List Page Styles */
+.blog {
+  background: var(--color-bg);
+  padding: 6rem 0;
+}
+
+.blog__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.blog__post {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.blog__post:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.blog__post-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog__post-info {
+  padding: 2rem;
+}
+
+.blog__post-info h4 {
+  margin-bottom: 2rem;
+}
+
+.blog__post-info p {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Individual Blog Post Page Styles */
+.blog-post {
+  background: var(--color-bg1);
+  padding: 6rem 0;
+}
+
+.blog-post__container {
+  background: var(--color-bg2);
+  padding: 4rem;
+  display: grid;
+  gap: 4rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+}
+
+.blog-post__container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.blog-post__meta {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: var(--color-light);
+}
+
+.blog-post__image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.blog-post__image img {
+  width: 30%;
+  max-width: 300px; /* Ensures the image doesn't get too large on bigger screens */
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.blog-post__content {
+  line-height: 1.7;
+}
+
+.blog-post__content h2 {
+  margin: 2rem 0 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .blog__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+  }
+
+  .blog-post__container {
+      padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog__container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+  }
+
+  .blog-post__container {
+      padding: 1rem;
+  }
+}
