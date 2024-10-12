@@ -1,0 +1,1 @@
+I had orginally coded this website without installing git or github in a different github repository. I had to then delete that github repository, install git, and then continue making changes to the website.
