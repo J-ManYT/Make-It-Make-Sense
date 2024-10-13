@@ -61,7 +61,6 @@
 .blog-post__container h1 {
   text-align: center;
   margin-bottom: 1rem;
-  
 }
 
 .blog-post__meta {
@@ -93,11 +92,16 @@
 }
 
 .blog-post__content h2 {
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 2rem;
+  color: var(--color-light);
 }
 
 .blog-post__content h3 {
-  margin: 1.5rem 0 1rem;
+  margin: 3rem 0 1rem;
+}
+
+.blog-post__content p {
+  margin: 0.1rem 1rem 0;
 }
 
 /* Media Queries */
